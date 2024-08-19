@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-<<<<<<< HEAD
+
 import Task from './components/Task';
-=======
-import TaskList from './components/TaskList';
->>>>>>> 90a7f22b933a76790b24344a22b83686c7cafa2b
+
 import { getTasks, createTask, updateTask, deleteTask } from './services/taskService';
 import "./styles/styles.css";
 
@@ -95,11 +93,9 @@ const App = () => {
         </div>
       )}
       {error && <div className="text-red-500 mb-4">{error}</div>}
-<<<<<<< HEAD
+
       <Task tasks={tasks} onDelete={deleteTaskHandler} onUpdate={toggleTask} view={view} />
-=======
-      <TaskList tasks={tasks} onDelete={deleteTaskHandler} onUpdate={toggleTask} view={view} />
->>>>>>> 90a7f22b933a76790b24344a22b83686c7cafa2b
+
     </div>
     </div>
   );
